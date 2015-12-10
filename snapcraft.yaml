@@ -9,7 +9,7 @@ parts:
   example-part:
     plugin: nil
     stage-packages:
-      - gpg
+      - gnupg
       - wget
     organize:
       opt/bin: bin
