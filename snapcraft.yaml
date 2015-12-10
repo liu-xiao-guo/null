@@ -1,4 +1,4 @@
-name: null
+name: null-project
 version: 0.1
 vendor: XiaoGuo, Liu <xiaoguo.liu@canonical.com>
 summary: This is the null project
@@ -7,18 +7,18 @@ icon: icon.png
 
 parts:
   example-part:
-    plugin: null
+    plugin: nil
     stage-packages:
-      - gpg
+      - gnupg
       - wget
     organize:
-      opt/bin: bin
+      usr/bin: bin
     filesets:
       binaries:
        - bin/*
        - usr/bin/*
       headers:
-       - *.h
+       - "*.h"
        - -include
     stage:
       - $binaries
