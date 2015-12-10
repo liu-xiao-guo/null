@@ -18,7 +18,7 @@ parts:
        - bin/*
        - usr/bin/*
       headers:
-       - *.h
+       - "*.h"
        - -include
     stage:
       - $binaries
