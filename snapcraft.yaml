@@ -1,0 +1,29 @@
+name: null
+version: 0.1
+vendor: XiaoGuo, Liu <xiaoguo.liu@canonical.com>
+summary: This is the null project
+description: A simple demo showing how to install a debian package
+icon: icon.png
+
+parts:
+  example-part:
+    plugin: null
+    stage-packages:
+      - gpg
+      - wget
+    organize:
+      opt/bin: bin
+    filesets:
+      binaries:
+       - bin/*
+       - usr/bin/*
+      headers:
+       - *.h
+       - -include
+    stage:
+      - $binaries
+      - test/bin/test_app
+      - $headers
+    snap:
+      - $binaries
+
