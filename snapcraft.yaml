@@ -12,7 +12,7 @@ parts:
       - gnupg
       - wget
     organize:
-      opt/bin: bin
+      usr/bin: bin
     filesets:
       binaries:
        - bin/*
