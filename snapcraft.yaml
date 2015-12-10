@@ -7,7 +7,7 @@ icon: icon.png
 
 parts:
   example-part:
-    plugin: null
+    plugin: nil
     stage-packages:
       - gpg
       - wget
