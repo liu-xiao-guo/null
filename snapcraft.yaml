@@ -3,7 +3,6 @@ version: 0.1
 vendor: XiaoGuo, Liu <xiaoguo.liu@canonical.com>
 summary: This is the null project
 description: A simple demo showing how to install a debian package
-icon: icon.png
 
 parts:
   example-part:
